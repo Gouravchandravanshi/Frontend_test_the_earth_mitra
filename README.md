@@ -19,6 +19,12 @@ Build for production:
 npm run build
 ```
 
+## Flows
+- Shopping: home, products, product detail, collections, blogs, about, contact
+- Cart drawer -> Checkout (`/checkout`)
+- Login popup (phone number -> OTP) -> Account (`/pages/account`, with Overview, My Orders, Address and Profile tabs at `/pages/account/:tab`)
+- Login and payment are mocked in the frontend; connect them to your backend API when ready
+
 ## Structure
 ```
 src/
@@ -40,6 +46,8 @@ src/
     BlogsPage.jsx
     AboutPage.jsx
     ContactPage.jsx
+    CheckoutPage.jsx   (new)
+    AccountPage.jsx    (new)
   data/
     index.js
 ```
